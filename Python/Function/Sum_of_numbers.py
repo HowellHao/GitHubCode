@@ -5,12 +5,14 @@ def Sum_of_numbers(n):
         return 0
     else:
         return n + Sum_of_numbers(n-1)
-try:
-    number = int (input("Insert Number: "))
-    if number < 0:
-        print("Number should be Positive Number")
-    else:
-        print(f"Sum of number {number} is {Sum_of_numbers(number)}")
-except ValueError:
-    print("Invalid Input")
+while True:
+    try:
+        number = int (input("Insert Number: "))
+        if number < 0:
+            print("Number should be Positive Number")
+        else:
+            print(f"Sum of number {number} is {Sum_of_numbers(number)}")
+        break
+    except ValueError:
+        print("Invalid Input")
         

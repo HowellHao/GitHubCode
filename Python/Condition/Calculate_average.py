@@ -39,5 +39,6 @@ try:
             classification = classify_students(average_score)
             print(f"Average score: {average_score: .2f}")
             print("Classification :", classification)
+            
 except ValueError:
     print("Invalid input")

@@ -11,12 +11,14 @@ def Is_prime (n):
             return False
         i += 6
     return True
-try:
-    n = int(input("Enter a number: "))
-    if Is_prime (n):
-        print (n, "is a prime number")
-    else:
-        print (n, "is not a prime number")
-except ValueError:
-    print ("Invalid input. Please enter a valid number.")
+while True:
+    try:
+        n = int(input("Enter a number: "))
+        if Is_prime (n):
+            print (n, "is a prime number")
+        else:
+            print (n, "is not a prime number")
+        break
+    except ValueError:
+        print ("Invalid input. Please enter a valid number.")
         

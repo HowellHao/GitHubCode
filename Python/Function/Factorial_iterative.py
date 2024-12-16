@@ -5,12 +5,14 @@ def factorial_iterative(n):
     for i in range(1, n + 1):
         result *= i
     return result
-try:
-    number = int(input("Insert Number: "))
-    if number < 0:
-        print("Factorial is not defined for negative numbers")
-    else:
-        print(f"Factorial of {number} is {factorial_iterative(number)}")
-except ValueError:
-    print("Invalid input. Please enter a non-negative integer.")
+while True:
+    try:
+        number = int(input("Insert Number: "))
+        if number < 0:
+            print("Factorial is not defined for negative numbers")
+        else:
+            print(f"Factorial of {number} is {factorial_iterative(number)}")
+        break
+    except ValueError:
+        print("Invalid input. Please enter a non-negative integer.")
         
