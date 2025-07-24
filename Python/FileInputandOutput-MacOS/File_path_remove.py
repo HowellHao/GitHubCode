@@ -1,6 +1,6 @@
 import os
 # Use raw string for file path or ask user for input
-file_path = r"C:\Users\Dell User\Desktop\GitHubCode\Python\FileInputandOutput\checkfile-Copy.txt"
+file_path = os.path.expanduser("~/Desktop/GitHubCode/Python/FileInputandOutput-MacOS/checkfile-CopyMacOS.txt")
 # file_path = input("Enter the full file path: ")
 
 if not os.path.isfile(file_path):

@@ -1,14 +1,17 @@
 import os
 
-# Use Mac OS style file path
-file_path = "/Users/heinrich-mac16/Desktop/GitHubCode/Python/FileInputandOutput/checkfile.txt"
+# Expand ~ to the full home directory path
+file_path = os.path.expanduser("~/Desktop/GitHubCode/Python/FileInputandOutput-MacOS/checkfile.txt")
 
+# Create the file if it doesn't exist
 if not os.path.isfile(file_path):
-    print(f"The file at '{file_path}' does not exist.")
-else:
-    try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
-            print(content)
-    except Exception as e:
-        print(f"An error occurred while reading the file: {e}")
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write("This is a new file.\nYou can add your content here.")
+
+# Now read and print the file content
+try:
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+        print(content)
+except Exception as e:
+    print(f"An error occurred while reading the file: {e}")

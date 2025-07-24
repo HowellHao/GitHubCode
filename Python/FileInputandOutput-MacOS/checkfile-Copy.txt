@@ -1,3 +1,2 @@
 Hello, this is a test file.
-This file is used for testing file reading in Python.
-This is an additional line for testing.
+This file is used for testing file 	 reading in Python.

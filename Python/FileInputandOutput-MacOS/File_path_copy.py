@@ -1,9 +1,9 @@
 import os
 import shutil
 
-# Use raw string for file path or ask user for input
-source_path = r"C:\Users\Dell User\Desktop\GitHubCode\Python\FileInputandOutput\checkfile.txt"
-destination_path = r"C:\Users\Dell User\Desktop\GitHubCode\Python\FileInputandOutput\checkfile-Copy.txt"
+# Set different source and destination paths
+source_path = os.path.expanduser("~/Desktop/GitHubCode/Python/FileInputandOutput-MacOS/checkfile.txt")
+destination_path = os.path.expanduser("~/Desktop/GitHubCode/Python/FileInputandOutput-MacOS/checkfile-CopyMacOS.txt")
 # source_path = input("Enter the source file path: ")
 # destination_path = input("Enter the destination file path: ")
 

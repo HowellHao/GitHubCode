@@ -1,6 +1,6 @@
 import os
 
-file_path = r"C:\Users\Dell User\Desktop\GitHubCode\Python\FileInputandOutput\checkfile.txt"
+file_path = os.path.expanduser("~/Desktop/GitHubCode/Python/FileInputandOutput-MacOS/checkfile.txt")
 content = "Hello, this is a test file.\nThis file is used for testing file reading in Python."
 content_to_add = "\nThis is an additional line for testing."
 

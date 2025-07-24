@@ -3,7 +3,7 @@ import shutil
 
 # Use raw string for file path or ask user for input
 source_path = r"C:\Users\Dell User\Desktop\GitHubCode\Python\FileInputandOutput\checkfile.txt"
-destination_path = r"C:\Users\Dell User\Desktop\GitHubCode\Python\FileInputandOutput\checkfile-Copy.txt"
+destination_path = r"C:\Users\Dell User\Desktop\GitHubCode\Python\FileInputandOutput\checkfile-Copy1.txt"
 # source_path = input("Enter the source file path: ")
 # destination_path = input("Enter the destination file path: ")
 

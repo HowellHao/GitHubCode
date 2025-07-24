@@ -1,6 +1,6 @@
 import os
 
-file_path = r"C:\Users\Dell User\Desktop\GitHubCode\Python\FileInputandOutput\checkfile.txt"
+file_path = os.path.expanduser("~/Desktop/GitHubCode/Python/FileInputandOutput-MacOS/checkfile.txt")
 content = "Hello, this is a test file.\nThis file is used for testing file \t reading in Python."
 
 # Write content to file (this will create the file if it doesn't exist)
