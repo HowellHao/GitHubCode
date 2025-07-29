@@ -8,7 +8,29 @@ class Student:
         self.email = email
         self.major = major
         self.grade = float(grade)
-
+    
+    @property    
+    def age(self):
+        return self._age
+    
+    @age.setter
+    def age(self, value):
+        if value.isdigit() and int(value) >= 0:
+            self._age = int(value)
+        else:
+            raise ValueError("Age must be a non-negative integer.")
+    
+    @property
+    def address(self):
+        return self._address
+    @address.setter
+    def address(self, value):
+        if any(c.isalpha() for c in value) and any(c.isdigit() for c in value):
+            self._address = value
+        else:
+            raise ValueError("Address must contain both letters and numbers.")
+    
+    
     def display(self):
         print(f"Name: {self.name}, ID: {self.IDStudent}, Age: {self.age}, Address: {self.address}, Phone: {self.phone_number}, Email: {self.email}, Major: {self.major}, Grade: {self.grade}")
 
@@ -90,5 +112,7 @@ def create_student():
 
 print("Enter student details:")
 student = create_student()
+print("\nStudent Information:")
 student.display()
-print(f"{student.name} is {student.is_passing()}. Honors: {student.is_honors()}. Scholarship: {student.is_scholarship()}.")
+print("\nStudent Status:")
+print(f"{student.name} is {student.is_passing()}. Honors: {student.is_honors()}. Scholarship: {student.is_scholarship()}." '\n')
